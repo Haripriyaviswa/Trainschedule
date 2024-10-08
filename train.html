@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Schedule Manager</title>
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(245, 175, 46);
+    margin: 0;
+    padding: 0;
+    }
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color:rgb(200, 198, 198);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Train Schedule Manager</h1>
+
+        <div class="input-section">
+            <label>TrainNumber:</label>
+            <input type="text" id="trainNumber" placeholder="Train Number" />
+            <br>
+            <br>
+            <label>ArrivalTime:</label>
+            <input type="time" id="arrivalTime" />
+            <br>
+            <br>
+            <label>DepartureTime:</label>
+            <input type="time" id="departureTime" />
+            <br><br>
+            <button id="addTrainBtn">Add Train</button>
+        </div>
+
+        <div class="schedule-section">
+            <h2>Current Train Schedule:</h2>
+            <ul id="trainList">
+                <!-- Train schedule will be displayed here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="train.js"></script>
+</body>
+</html>
